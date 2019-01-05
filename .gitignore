@@ -1,7 +1,6 @@
 coverage/
 demo/dist
-es/
-lib/
+.idea/
 node_modules/
 umd/
 npm-debug.log*
