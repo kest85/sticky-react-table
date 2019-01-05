@@ -483,7 +483,8 @@ export default class Table extends PureComponent {
     const nextPage = Math.floor(dataCount / infiniteScrollPageSize) + 1;
 
     if (!this.requestedPages[nextPage]) {
-      const targetRow = this.rowRefs[dataCount - infiniteScrollThreshold];
+      // const targetRow = this.rowRefs[dataCount - infiniteScrollThreshold];
+      const targetRow = document.getElementsByClassName("Sticky-React-Table--Row")[dataCount - infiniteScrollThreshold - 1];
 
       const {
         top: innerTop,
